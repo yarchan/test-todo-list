@@ -20,14 +20,14 @@
             @click="searchTaskFunc"
             :class="{'search-animation': searchTask.includes(task.taskKey) }"
           >
-          <div class="table__body-td-check" 
+          <button class="table__body-td-check" 
             :class="{'status-active':task.isDone}" @click="taskDone(task.taskKey)" >
               <img 
                 src="../assets/Check.svg" 
                 class="table__body-td-check-img" 
                 :class="{'status-img-active':task.isDone}"              
               >
-          </div>
+          </button>
           <div class="table__body-td">
             {{task.value}}
           </div>
